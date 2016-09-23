@@ -1,0 +1,56 @@
+
+header{
+	width: 100%;
+}
+
+.navbar-cabecera{
+	background-color: black;
+}
+
+
+.container-fluid{
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.jumbotron{
+	background-color: #fff;
+}
+
+
+.container{
+	width: 90%;
+}
+
+.list-group-item{
+	text-transform: capitalize;
+}
+
+.item img{
+	width: 100%;
+}
+
+.img-detalle{
+	border: 1px solid #eee;
+	border-radius: 5px;
+}
+
+.modal-body ul{
+	display: inline-block;
+}
+
+.modal-body ul li{
+	list-style: none;
+	padding: 5px;
+}
+
+.modal-body ul li a{
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+.tab-comentarios p{
+	border: 1px solid #C1CDCD;
+	border-radius: 3px 3px 0 0;
+	padding: 10px;
+}
