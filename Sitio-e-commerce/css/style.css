@@ -54,3 +54,21 @@ header{
 	border-radius: 3px 3px 0 0;
 	padding: 10px;
 }
+
+.input-cant{
+	width: 50px;
+}
+
+/*
+- Cuando la ventana se reduce a resolución de teléfonos móviles (menos de 768px), 
+el menú principal de navegación se convierte en un ícono que al desplegarse muestra los vínculos "Canasta" y Salir.
+ Además, en vez de mostrar tres productos por fila, ahora se muestran dos.
+- Cuando la ventana del navegador se reduce a resolución de tabletas (entre 768px y 991px),
+ las categorías se ocultan y el campo de búsqueda se muestra encima del carrusel:
+*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+	#categorias{
+		display: none;
+	}
+}
