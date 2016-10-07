@@ -46,7 +46,7 @@
 				</div>
 				<!-- Categorias -->
 				<h3>Categorías</h3>
-				<div class="list-group list-categorias">
+				<div id="categorias" class="list-group list-categorias">
 					
 					<a href="#" class="list-group-item active">
 						<span class="badge">100</span>
@@ -155,7 +155,7 @@
 				      <div class="caption">
 				        <h3>Underground Max</h3>
 				        <p>Paro los amantes del aunderground</p>
-				        <p><a href="#" class="btn btn-primary" role="button">$25 <span class="glyphicon glyphicon-shopping-cart"></span></a> <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#desc3">Detalles</a></p>
+				        <p><a href="#" class="btn btn-primary" role="button">$30 <span class="glyphicon glyphicon-shopping-cart"></span></a> <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#desc3">Detalles</a></p>
 				      </div>
 				    </div>
 				  </div>
@@ -184,7 +184,8 @@
 				    </div>
 				  </div>
 				  
-				<!-- Modal -->
+			<!-- Modales -->
+				<!-- Modal 1 -->
 				<div class="modal fade" id="desc1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				  <div class="modal-dialog" role="document">
 				    <div class="modal-content">
@@ -193,6 +194,7 @@
 				        <h4 class="modal-title" id="myModalLabel">Hister Ultimate</h4>
 				      </div>
 				      <div class="modal-body">
+				      	<div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-info-sign"></span> Este producto está agotado.</div>
 				        <img src="img\contenido\camiseta-1.jpg" alt="..." class="img-detalle">
 						<ul>
 							<li>Precio: <strong>$25</strong></li>
@@ -207,18 +209,18 @@
 							<li><a href="#"><span class="glyphicon glyphicon-heart"></span> Agregar a los deseos</a></li>
 						</ul>
 						<ul class="nav nav-tabs">
-						  <li role="presentation" class="active"><a data-toggle="tab" href="#descripcion">Descripción</a></li>
-						  <li role="presentation"><a data-toggle="tab" href="#comentarios">Comentarios</a></li>
+						  <li role="presentation" class="active"><a data-toggle="tab" href="#descripcion1">Descripción</a></li>
+						  <li role="presentation"><a data-toggle="tab" href="#comentarios1">Comentarios</a></li>
 						</ul>
 						<div class="tab-content">
-							<div id="descripcion" class="tab-pane fade in active descripcion">
+							<div id="descripcion1" class="tab-pane fade in active descripcion">
 						      <div class="panel panel-default">
 						      	<div class="panel-body">
 						      		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptatibus velit, suscipit molestiae, sint enim pariatur mollitia iure harum necessitatibus voluptas nihil at magni. Quidem, nesciunt? Tempora, sequi natus nemo?
 						      	</div>
 						      </div>
 							</div>
-							<div id="comentarios" class="tab-pane fade tab-comentarios">
+							<div id="comentarios1" class="tab-pane fade tab-comentarios">
 								<div class="panel panel-default">
 								  <!-- Default panel contents -->
 								  <div class="panel-heading">Ludwing Rivera comento hace un mes</div>
@@ -235,54 +237,7 @@
 							
 						</div>	
 
-						<div class="modal fade" id="desc2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-						  <div class="modal-dialog" role="document">
-						    <div class="modal-content">
-						      <div class="modal-header">
-						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						        <h4 class="modal-title" id="myModalLabel">On Motion Live</h4>
-						      </div>
-						      <div class="modal-body">
-						        <img src="img\contenido\camiseta-2.jpg" alt="..." class="img-detalle">
-								<ul>
-									<li>Precio: <strong>$25</strong></li>
-									<li>Calificación: 
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star"></span>
-										<span class="glyphicon glyphicon-star-empty"></span>
-										<span class="glyphicon glyphicon-star-empty"></span>
-									</li>
-									<li><a href="#" class="a1 label label-warning">On Motion</a><a href="#" class="a2 label label-default">Deportiva</a></li>
-									<li><a href="#"><span class="glyphicon glyphicon-heart"></span> Agregar a los deseos</a></li>
-								</ul>
-								<ul class="nav nav-tabs">
-								  <li role="presentation" class="active"><a data-toggle="tab" href="#descripcion">Descripción</a></li>
-								  <li role="presentation"><a data-toggle="tab" href="#comentarios">Comentarios</a></li>
-								</ul>
-								<div class="tab-content">
-									<div id="descripcion" class="tab-pane fade in active descripcion">
-								      <div class="panel panel-default">
-								      	<div class="panel-body">
-								      		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptatibus velit, suscipit molestiae, sint enim pariatur mollitia iure harum necessitatibus voluptas nihil at magni. Quidem, nesciunt? Tempora, sequi natus nemo?
-								      	</div>
-								      </div>
-									</div>
-									<div id="comentarios" class="tab-pane fade tab-comentarios">
-										<div class="panel panel-default">
-										  <!-- Default panel contents -->
-										  <div class="panel-heading">Ludwing Rivera comento hace una semana</div>
-										  <div class="panel-body">
-											Esta camiseta está increible, la quiero!
-										  </div>
-										</div>
-										<form>
-										    <div class="form-group">
-										      <textarea class="form-control" rows="5" id="comment" placeholder="Ingresa tu comentario"></textarea>
-										    </div>
-										  </form>
-									</div>
-								</div>						
+						
 				      </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
@@ -291,9 +246,272 @@
 				    </div>
 				  </div>
 				</div>
-
+				<!-- End Modal 1 -->
 				
-				<!-- End modal-->
+				<!-- Modal 2 -->
+				<div class="modal fade" id="desc2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">On Motion Live</h4>
+				      </div>
+				      <div class="modal-body">
+				      	<div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-info-sign"></span> Aprovecha ultimos 10 dias, 15% de descuento.</div>
+				        <img src="img\contenido\camiseta-2.jpg" alt="..." class="img-detalle">
+						<ul>
+							<li>Precio: <strong>$30</strong></li>
+							<li>
+								<input type="number" class="input-cant" min="1" max="20" value="1"> Cantidad.
+							</li>
+							<li>Calificación: 
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</li>
+							<li><a href="#" class="a1 label label-warning">Motion</a><a href="#" class="a2 label label-default">Deportiva</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-heart"></span> Agregar a los deseos</a></li>
+						</ul>
+						<ul class="nav nav-tabs">
+						  <li role="presentation" class="active"><a data-toggle="tab" href="#descripcion2">Descripción</a></li>
+						  <li role="presentation"><a data-toggle="tab" href="#comentarios2">Comentarios</a></li>
+						</ul>
+						<div class="tab-content">
+							<div id="descripcion2" class="tab-pane fade in active descripcion">
+						      <div class="panel panel-default">
+						      	<div class="panel-body">
+						      		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptatibus velit, suscipit molestiae, sint enim pariatur mollitia iure harum necessitatibus voluptas nihil at magni. Quidem, nesciunt? Tempora, sequi natus nemo?
+						      	</div>
+						      </div>
+							</div>
+							<div id="comentarios2" class="tab-pane fade tab-comentarios">
+								<div class="panel panel-default">
+								  <!-- Default panel contents -->
+								  <div class="panel-heading">Ludwing Rivera comento hace un día</div>
+								  <div class="panel-body">
+									Genial! que buenos motivos y con el 15% de descuento, las quiero todas.
+								  </div>
+								</div>
+								<form>
+								    <div class="form-group">
+								      <textarea class="form-control" rows="5" id="comment" placeholder="Ingresa tu comentario"></textarea>
+								    </div>
+								  </form>
+							</div>
+							
+						</div>	
+
+						
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary">Comprar</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- End Modal 2 -->
+
+				<!-- Modal 3 -->
+				<div class="modal fade" id="desc3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">On Motion Live</h4>
+				      </div>
+				      <div class="modal-body">
+				      	<div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-info-sign"></span> Estilo descomplicado y underground, por la compra de 2 motivos lleva el tercero totalmente gratis.</div>
+				        <img src="img\contenido\camiseta-3.jpg" alt="..." class="img-detalle">
+						<ul>
+							<li>Precio: <strong>$25</strong></li>
+							<li>
+								<input type="number" class="input-cant" min="1" max="20" value="1"> Cantidad.
+							</li>
+							<li>Calificación: 
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</li>
+							<li><a href="#" class="a1 label label-warning">Motion</a><a href="#" class="a2 label label-default">Deportiva</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-heart"></span> Agregar a los deseos</a></li>
+						</ul>
+						<ul class="nav nav-tabs">
+						  <li role="presentation" class="active"><a data-toggle="tab" href="#descripcion3">Descripción</a></li>
+						  <li role="presentation"><a data-toggle="tab" href="#comentarios3">Comentarios</a></li>
+						</ul>
+						<div class="tab-content">
+							<div id="descripcion3" class="tab-pane fade in active descripcion">
+						      <div class="panel panel-default">
+						      	<div class="panel-body">
+						      		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptatibus velit, suscipit molestiae, sint enim pariatur mollitia iure harum necessitatibus voluptas nihil at magni. Quidem, nesciunt? Tempora, sequi natus nemo?
+						      	</div>
+						      </div>
+							</div>
+							<div id="comentarios3" class="tab-pane fade tab-comentarios">
+								<div class="panel panel-default">
+								  <!-- Default panel contents -->
+								  <div class="panel-heading">Jessica Paola comento hace un día</div>
+								  <div class="panel-body">
+									Excelente regalo para mi esposo.
+								  </div>
+								</div>
+								<form>
+								    <div class="form-group">
+								      <textarea class="form-control" rows="5" id="comment" placeholder="Ingresa tu comentario"></textarea>
+								    </div>
+								  </form>
+							</div>
+							
+						</div>	
+
+						
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary">Comprar</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- End Modal 3 -->
+
+				<!-- Modal 4 -->
+				<div class="modal fade" id="desc4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">On Motion Cool</h4>
+				      </div>
+				      <div class="modal-body">
+				      	<div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-info-sign"></span> Variedad de tonos y contenidos que destacan, mo pasaras desapercibido.</div>
+				        <img src="img\contenido\camiseta-4.jpg" alt="..." class="img-detalle">
+						<ul>
+							<li>Precio: <strong>$25</strong></li>
+							<li>
+								<input type="number" class="input-cant" min="1" max="20" value="1"> Cantidad.
+							</li>
+							<li>Calificación: 
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</li>
+							<li><a href="#" class="a1 label label-warning">Motion</a><a href="#" class="a2 label label-default">Deportiva</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-heart"></span> Agregar a los deseos</a></li>
+						</ul>
+						<ul class="nav nav-tabs">
+						  <li role="presentation" class="active"><a data-toggle="tab" href="#descripcion4">Descripción</a></li>
+						  <li role="presentation"><a data-toggle="tab" href="#comentarios4">Comentarios</a></li>
+						</ul>
+						<div class="tab-content">
+							<div id="descripcion4" class="tab-pane fade in active descripcion">
+						      <div class="panel panel-default">
+						      	<div class="panel-body">
+						      		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptatibus velit, suscipit molestiae, sint enim pariatur mollitia iure harum necessitatibus voluptas nihil at magni. Quidem, nesciunt? Tempora, sequi natus nemo?
+						      	</div>
+						      </div>
+							</div>
+							<div id="comentarios4" class="tab-pane fade tab-comentarios">
+								<div class="panel panel-default">
+								  <!-- Default panel contents -->
+								  <div class="panel-heading">Mauricio Moreno comento hace tres días</div>
+								  <div class="panel-body">
+									Mi tercera compra en el mes, la mejor decisión.
+								  </div>
+								</div>
+								<form>
+								    <div class="form-group">
+								      <textarea class="form-control" rows="5" id="comment" placeholder="Ingresa tu comentario"></textarea>
+								    </div>
+								  </form>
+							</div>
+							
+						</div>	
+
+						
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary">Comprar</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- End Modal 4 -->
+
+				<!-- Modal 5 -->
+				<div class="modal fade" id="desc5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Actitud descomplicada</h4>
+				      </div>
+				      <div class="modal-body">
+				      	<div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-info-sign"></span> Actitud descomplicada con productos importados de Italia al mejor precio.</div>
+				        <img src="img\contenido\camiseta-5.jpg" alt="..." class="img-detalle">
+						<ul>
+							<li>Precio: <strong>$25</strong></li>
+							<li>
+								<input type="number" class="input-cant" min="1" max="20" value="1"> Cantidad.
+							</li>
+							<li>Calificación: 
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star-empty"></span>
+							</li>
+							<li><a href="#" class="a1 label label-warning">Motion</a><a href="#" class="a2 label label-default">Deportiva</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-heart"></span> Agregar a los deseos</a></li>
+						</ul>
+						<ul class="nav nav-tabs">
+						  <li role="presentation" class="active"><a data-toggle="tab" href="#descripcion5">Descripción</a></li>
+						  <li role="presentation"><a data-toggle="tab" href="#comentarios5">Comentarios</a></li>
+						</ul>
+						<div class="tab-content">
+							<div id="descripcion5" class="tab-pane fade in active descripcion">
+						      <div class="panel panel-default">
+						      	<div class="panel-body">
+						      		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde voluptatibus velit, suscipit molestiae, sint enim pariatur mollitia iure harum necessitatibus voluptas nihil at magni. Quidem, nesciunt? Tempora, sequi natus nemo?
+						      	</div>
+						      </div>
+							</div>
+							<div id="comentarios5" class="tab-pane fade tab-comentarios">
+								<div class="panel panel-default">
+								  <!-- Default panel contents -->
+								  <div class="panel-heading">Hugo Rivera comento hace dos días</div>
+								  <div class="panel-body">
+									Gran variedad de motivos para el diario vivir.
+								  </div>
+								</div>
+								<form>
+								    <div class="form-group">
+								      <textarea class="form-control" rows="5" id="comment" placeholder="Ingresa tu comentario"></textarea>
+								    </div>
+								  </form>
+							</div>
+							
+						</div>	
+
+						
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary">Comprar</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- End Modal 5 -->
+			<!-- End modal-->
 
 				</div>	
 			</section>
